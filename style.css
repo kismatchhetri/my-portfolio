@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+:root{
+     --background-color:#E6E6E6;
+     --p-color: #555555;
+    --nav-border-color:rgb(155, 155, 155);
+    --h1-color: rgb(54, 54, 54);
+     --p-font: 0.9rem;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+p{
+    color: var(--p-color);
+    cursor: pointer;
+    font-size: var(--p-font);
+}
+
+h1{
+    color: var(--h1-color);
+    font-weight: 500;
+    font-size: 1.3rem;
+    font-size: clamp(1.3rem, 0.8400000000000001rem + 2.3vw, 3.6rem);
+    letter-spacing:0.1rem;
+}
+
+h4{
+    font-weight: 500;
+    font-size: 0.8rem;
+    font-size: clamp(0.8rem, 0.74rem + 0.30000000000000004vw, 1.1rem);
+    color: var(--h1-color);
+    letter-spacing: 0.04rem;
+}
+
+.entity{
+    font-size: 0.6rem;
+}
+/* nav css started*/
+nav{
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 12px;
+    /* background-color: gainsboro; */
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    padding: 2px 12px;
+    gap: 2px;
+    border: 1px solid var(--nav-border-color);
+    border-radius: 2rem;
+
+}
+nav ul li p{
+    padding: 6px 6px;
+}
+
+.right-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 4px;
+    border: 1px solid var(--nav-border-color);
+    border-radius:2rem ;
+}
+.right-nav p{
+    padding: 6px 8px;
+}
+
+
+
+/* main css started */
+main{
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    /* background-color: green; */
+}
+
+.main-image img{
+    height: 115px;
+    width: 115x;
+}
+
+.main-text h1{
+    text-align: center;
+}
+
+.main-image h4{
+    margin-top: 0.6rem;
+}
+
+
+/* footer css started */
+footer{
+height: 29vh;
+display: flex;
+justify-content: center;
+align-items: start;
+/* background-color: red; */
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 10px;
+    margin-top: 1.6rem;
+    background-color: rgba(237, 237, 237, 0.5);
+    border: 2px solid  rgb(204, 204, 204);
+    border-radius: 1rem;
+}
+
+footer img{
+    height: 55px;
+    width: 55px;
+}
+
+
+/* section css started */
+section{
+    background-color: green;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 64px 1fr 64px;
+}
