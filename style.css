@@ -87,18 +87,18 @@ nav{
 nav ul {
     display: flex;
     align-items: center;
-    padding: 4px 14px;
+    padding: 4px 12px;
     gap: 6px;
     background-color: rgba(237, 237, 237, 0.5);
     border: 1px solid  rgb(189, 189, 189);
     border-radius: 2rem;
 }
 nav ul li p{
-    padding: 4px 4px;
+    padding: 4px 6px;
     border-radius: 2rem;
 }
 nav ul li p:hover, .right-nav p:hover{
-    background-color: #dadada;
+    background-color: #e1e1e1;
 }
 
 .right-nav{
@@ -131,6 +131,7 @@ main{
 .main-image img{
     height: 115px;
     width: 115x;
+    cursor: pointer;
 }
 
 .main-text h1{
@@ -141,8 +142,18 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
-
+.random-message{
+    background-color: rgba(207, 207, 207,0.4);
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 8px 12px;
+    position: absolute;
+    top: -25%;
+    left: -62%;
+    display: none;
+}
 .main-image h4{
     margin-top: 0.5rem;
 }
@@ -158,8 +169,9 @@ footer{
     justify-self: center;
     padding: 8px 10px;
     margin-top: 1.6rem;
-    background-color: rgba(237, 237, 237, 0.5);
-    border: 2px solid  rgb(204, 204, 204);
+    background-color: rgb(241 241 241 / 70%);
+    border: 2px solid rgb(212 212 212);
+    box-shadow: 2px 2px 1px rgb(244, 244, 244);
     border-radius: 1rem;
    
     @media (width >= 200px){
@@ -185,12 +197,24 @@ footer hr{
 footer img{
     height: 55px;
     width: 55px;
+    transition: 0.3s ease-in-out;
+    border-radius: 1rem;
 }
 .footer-skill{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+
+}
+.footer-skill:hover{
+    padding: 0px 0.6px;
+    transform: translateX(1.5px);
+    transition: 0.4s ease-in-out;
+}
+.footer-skill img:hover{
+    transform: scale(1.06);
 }
 .footer-image-text{
     display: none;
@@ -305,7 +329,15 @@ h2{
     font-size: 0.7rem;
     display: block;
 }
+.footer-skill img:hover{
+    transform: scale(1);
+    transform: translateX(0px);
 
+}
+.footer-skill:hover{
+    padding: 0px 0px;
+    transition: 0s ease-in-out;
+}
 nav{
     height: 10vh;
     /* background-color: red; */
