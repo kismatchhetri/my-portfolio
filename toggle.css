@@ -1,18 +1,43 @@
 .dark{
-    background-color: black;
+    background-color: rgb(14, 14, 14);
     p{
-        color: white;
+        color: rgb(205, 205, 205);
     }   
     h3{
     color: white;
     }
     h4{
-        color: white;
+        color:  rgb(223, 223, 223);
     }
     h2{
         color: white;
     }
     h1{
-        color: white;
+        color: rgb(223, 223, 223);
     }
+    nav ul , .right-nav, .footer-container {
+    background-color: rgba(237, 237, 237, 0.1);
+    border: 1px solid  rgb(92, 91, 91);
+    }
+    nav ul li p:hover, .right-nav p:hover{
+    background-color:  rgb(63, 63, 63);
 }
+}
+/* .dark{
+    background-color: rgb(251, 251, 251);
+    p{
+        color: rgb(37, 36, 36);
+    }   
+    h3{
+    color: rgb(51, 47, 47);
+    }
+    h4{
+        color: rgb(39, 38, 38);
+    }
+    h2{
+        color: rgb(49, 48, 48);
+    }
+    h1{
+        color: rgb(44, 42, 42);
+    }
+} */

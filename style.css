@@ -1,3 +1,5 @@
+@import "toggle.css";
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -85,27 +87,32 @@ nav{
 nav ul {
     display: flex;
     align-items: center;
-    padding: 2px 12px;
-    gap: 2px;
+    padding: 4px 14px;
+    gap: 6px;
     background-color: rgba(237, 237, 237, 0.5);
     border: 1px solid  rgb(189, 189, 189);
     border-radius: 2rem;
 }
 nav ul li p{
-    padding: 6px 6px;
+    padding: 4px 4px;
+    border-radius: 2rem;
+}
+nav ul li p:hover, .right-nav p:hover{
+    background-color: #dadada;
 }
 
 .right-nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2px 4px;
+    padding: 6px 9px;
     background-color: rgba(237, 237, 237, 0.5);
     border: 1px solid  rgb(189, 189, 189);
     border-radius: 2rem;
 }
 .right-nav p{
-    padding: 5px 7px;
+    padding: 1px 2px;
+    border-radius: 2rem;
 }
 
 
