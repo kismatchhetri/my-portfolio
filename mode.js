@@ -3,6 +3,7 @@ let image = document.querySelector(".main-image img");
 let imageText = document.querySelector(".main-image-h4");
 let play = document.querySelector(".play-button");
 let icons = document.querySelectorAll(".footer-skill");
+let mic = document.querySelectorAll(".mic-emoji");
 
 let body = document.body;
 let clickAudio = new Audio("sounds/click.mp3");
@@ -30,7 +31,7 @@ let addo = true;
 play.addEventListener("click",()=>{
     if(audio == "play"){
     playAudio.play();
-    play.innerHTML ="<span>&#9836;</span>";
+    play.innerHTML ='<img src="images/icons/blackmic.gif" alt="" height="10px" width="10px">';
 
     if(addo == true){
     timerID = setTimeout(()=>{
@@ -42,6 +43,7 @@ play.addEventListener("click",()=>{
         imageText.innerText = "Spike"
        }
     },4200)
+
     timerID2 =setTimeout(()=>{
         if(mode == "light")
        { image.src="images/main-profile.png";

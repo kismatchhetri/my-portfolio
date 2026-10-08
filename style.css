@@ -115,8 +115,10 @@ nav ul li p:hover, .right-nav p:hover{
     border-radius: 2rem;
 }
 
-
-
+.play-button img{
+    height: 14px;
+    width: 14px;
+}
 /* main css started */
 main{
     height:60vh;
