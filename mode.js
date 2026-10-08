@@ -2,6 +2,7 @@ let modeBtn = document.querySelector(".right-nav p");
 let image = document.querySelector(".main-image img");
 let imageText = document.querySelector(".main-image-h4");
 let play = document.querySelector(".play-button");
+let playSpan = document.querySelector(".play-button span");
 let icons = document.querySelectorAll(".footer-skill");
 let mic = document.querySelectorAll(".mic-emoji");
 
@@ -11,27 +12,39 @@ let playAudio = new Audio("sounds/aipodcast.mp3");
 let iconsSound = new Audio("sounds/pop.mp3");
 
 let mode = "light";
+
 modeBtn.addEventListener("click" , ()=>{
     if(mode == "light"){
         mode = "dark";
         image.src ="images/dark-profile.png";
         body.classList.add("dark");
         clickAudio.play();
+        if(gaana == "playing"){
+        playSpan.innerHTML ='<img src="images/icons/whitemic.gif" alt="" height="10px" width="10px">';
+        }
 
     }else if(mode == "dark"){
         mode = "light"
         body.classList.remove("dark");
         image.src ="images/main-profile.png";
         clickAudio.play();
+        if(gaana == "playing"){
+        playSpan.innerHTML ='<img src="images/icons/blackmic.gif" alt="" height="10px" width="10px">';
+        }
     }
 })
-
 let audio = "play";
 let addo = true;
 play.addEventListener("click",()=>{
+
     if(audio == "play"){
+    gaana = "playing";
     playAudio.play();
-    play.innerHTML ='<img src="images/icons/blackmic.gif" alt="" height="10px" width="10px">';
+    if(mode == "dark"){
+    playSpan.innerHTML ='<img src="images/icons/whitemic.gif" alt="" height="10px" width="10px">';
+    }else if(mode == "light"){
+    playSpan.innerHTML ='<img src="images/icons/blackmic.gif" alt="" height="10px" width="10px">';
+    }
 
     if(addo == true){
     timerID = setTimeout(()=>{
@@ -59,14 +72,13 @@ play.addEventListener("click",()=>{
     audio = "pause";
     }else{
         playAudio.pause();
-        audio = "play"
-        play.innerHTML ="<span>&#9654;</span>";
+        audio = "play";
+        playSpan.innerHTML ="<span>&#9654;</span>"
         clearTimeout(timerID); 
         clearTimeout(timerID2); 
     }
 
 })
-
 icons.forEach((val)=>{
     val.addEventListener("mouseover",()=>{
         iconsSound.play();
