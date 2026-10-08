@@ -224,6 +224,7 @@ footer img{
 /* section css started */
 section{
     display: grid;
+    justify-content: center;
 
     margin-top: 3rem;
     row-gap: 2.4rem;
@@ -235,7 +236,7 @@ section{
     grid-template-columns: 54px 1fr 54px;
     }
     @media(width >=1200px){
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 1fr 1110px 1fr;
     }
 }
 
@@ -281,13 +282,13 @@ section{
 }
 
 
-header{
-    display: ;
+/* header{
+    display:none ;
 }
 
 section{
-    display: ;
-}
+    display:none ;
+} */
 
 
 /* article css started */
@@ -301,10 +302,10 @@ article{
   grid-template-columns: 34px 1fr 34px;
   }
   @media(width >=600px){
-  grid-template-columns: 200px 1fr 200px;
+  grid-template-columns: 100px 1fr 100px;
   }
   @media(width >=1200px){
-  grid-template-columns: 450px 1fr 450px;
+  grid-template-columns: 1fr 700px 1fr;
   }
 }
 
