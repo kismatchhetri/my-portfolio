@@ -74,6 +74,7 @@ nav hr{
     background-color:var(--nav-border-color);
     width: 0.8px;
     height: 14px;
+
 }
 /* nav css started*/
 nav{
@@ -164,7 +165,7 @@ main{
 /* footer css started */
 
 footer{
-    height: 29vh;
+    height: 25vh;
 }
 .footer-container{
     display: grid;
@@ -297,7 +298,7 @@ section{
 article{
 
   display: grid;
-  margin-top: 4rem;
+  margin-top: 6rem;
   row-gap: 2.4rem;
 
   @media(width >=200px){

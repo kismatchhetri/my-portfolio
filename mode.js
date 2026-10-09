@@ -40,16 +40,19 @@ play.addEventListener("click",()=>{
     if(audio == "play"){
     gaana = "playing";
     playAudio.play();
+    playAudio.loop=true;
     if(mode == "dark"){
     playSpan.innerHTML ='<img src="images/icons/whitemic.gif" alt="" height="10px" width="10px">';
     }else if(mode == "light"){
     playSpan.innerHTML ='<img src="images/icons/blackmic.gif" alt="" height="10px" width="10px">';
     }
-
+     console.log(addo);
     if(addo == true){
     timerID = setTimeout(()=>{
+
        if(mode == "light")
-       { image.src="images/main-profile-dog.png";
+       {
+        image.src="images/main-profile-dog.png";
         imageText.innerText = "Spike"
        }else if(mode == "dark"){
         image.src="images/dark-profile-dog.png";
@@ -59,7 +62,8 @@ play.addEventListener("click",()=>{
 
     timerID2 =setTimeout(()=>{
         if(mode == "light")
-       { image.src="images/main-profile.png";
+       {
+         image.src="images/main-profile.png";
         imageText.innerText = "Kismat Chhetri"
        }else if(mode == "dark"){
         image.src="images/dark-profile.png";
@@ -72,10 +76,12 @@ play.addEventListener("click",()=>{
     audio = "pause";
     }else{
         playAudio.pause();
+        playAudio.currentTime = 0;
         audio = "play";
         playSpan.innerHTML ="<span>&#9654;</span>"
         clearTimeout(timerID); 
         clearTimeout(timerID2); 
+        addo =true;
     }
 
 })
