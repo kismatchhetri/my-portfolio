@@ -120,6 +120,9 @@ nav ul li p:hover, .right-nav p:hover{
     height: 14px;
     width: 14px;
 }
+
+
+
 /* main css started */
 main{
     height:60vh;
@@ -162,8 +165,9 @@ main{
 }
 
 
-/* footer css started */
 
+
+/* footer css started */
 footer{
     height: 25vh;
 }
@@ -346,6 +350,8 @@ h2{
 
 
 }
+
+
 @media (width <= 600px){
 
 
