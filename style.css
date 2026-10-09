@@ -120,9 +120,6 @@ nav ul li p:hover, .right-nav p:hover{
     height: 14px;
     width: 14px;
 }
-
-
-
 /* main css started */
 main{
     height:60vh;
@@ -165,9 +162,8 @@ main{
 }
 
 
-
-
 /* footer css started */
+
 footer{
     height: 25vh;
 }
@@ -228,104 +224,8 @@ footer img{
 }
 
 
-/* section css started */
-section{
-    display: grid;
-    justify-content: center;
-
-    margin-top: 3rem;
-    row-gap: 2.4rem;
-
-    @media(width >=200px){
-    grid-template-columns: 24px 1fr 24px;
-    }
-    @media(width >=600px){
-    grid-template-columns: 54px 1fr 54px;
-    }
-    @media(width >=1200px){
-    grid-template-columns: 1fr 1110px 1fr;
-    }
-}
-
-.section-top-text{
-  grid-column: 2/3;
-
-}
-.section-projects{
-  grid-column: 2/3;
-  display: grid;
-  gap: 2.6rem;
-  
-}
-
-.section-projects-list{
-    background-color: rgb(255, 255, 255);
-    padding: 26px 54px;
-    border-radius: 0.6rem;
-    display: grid;
-    gap: 0.8rem;
-}
-.section-projects-list h5{
-  width: 66%;
-  letter-spacing: 0.02rem;
-  line-height: 1.3rem;
-}
-
-.section-projects-list img{
- width: 100%;
- height: 525px;
- margin-top: 0.6rem;
-}
-
-.section-back{
-  grid-column: 2/3;
-}
-.section-back button{
-    padding: 7px 16px;
-	border: 1px solid var(--nav-border-color);
-    border-radius:2rem ;
-    background: none;
-    margin-bottom: 6rem;
-}
 
 
-/* header{
-    display:none ;
-}
-
-section{
-    display:none ;
-} */
-
-
-/* article css started */
-article{
-
-  display: grid;
-  margin-top: 6rem;
-  row-gap: 2.4rem;
-
-  @media(width >=200px){
-  grid-template-columns: 34px 1fr 34px;
-  }
-  @media(width >=600px){
-  grid-template-columns: 100px 1fr 100px;
-  }
-  @media(width >=1200px){
-  grid-template-columns: 1fr 700px 1fr;
-  }
-}
-
-.about-text{
-    grid-column: 2/3;
-}
-.about-text h4{
-    text-align:start;
-    line-height: 1.6rem;
-    font-weight: 500;
-    font-size: 1rem;
-    font-size: clamp(1rem, 0.984rem + 0.08000000000000007vw, 1.08rem);
-}
 
 
 /* responsive started */
@@ -335,29 +235,10 @@ article{
     height: 90px;
     width: 90px;
 }
-.section-projects-list {
-    padding: 20px 24px;
-}
-.section-projects-list h5{
-  width: 95%;
-}
-h2{
-    width:90%;
-}
-.section-projects-list img {
-    height: auto;
-}
-
 
 }
-
-
 @media (width <= 600px){
 
-
-.section-projects-list h5{
-  width: 98%;
-}
 footer hr{
     display: none;
 }
@@ -366,9 +247,7 @@ footer hr{
     height: 70px;
     width: 70px;
 }
-h2{
-    width:96%;
-}
+
 .footer-image-text{
     margin-top: 0.4rem;
     font-size: 0.7rem;
