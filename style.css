@@ -76,7 +76,9 @@ nav hr{
     height: 14px;
 
 }
-/* nav css started*/
+
+
+/* NAV STARTED */
 nav{
     height: 11vh;
     display: flex;
@@ -120,7 +122,9 @@ nav ul li p:hover, .right-nav p:hover{
     height: 14px;
     width: 14px;
 }
-/* main css started */
+
+
+/* MAIN STARTED */
 main{
     height:60vh;
     display: flex;
@@ -162,8 +166,7 @@ main{
 }
 
 
-/* footer css started */
-
+/* FOOTER STARTED */
 footer{
     height: 25vh;
 }
@@ -225,10 +228,7 @@ footer img{
 
 
 
-
-
-
-/* responsive started */
+/* RESPONSIVE STARTED */
 @media (width <= 900px){
   
 .main-image img {
