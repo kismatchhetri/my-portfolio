@@ -2,7 +2,7 @@
 let messageBtn = document.querySelector(".random-message");
 console.log(messageBtn);
 
-let messages = ["Hey, You!","Take a Look","Namaste","Let's \n Connect","Welcome!"];
+let messages = ["Hey, You!","Take a Look","Namaste🙏🏼","Let's \n Connect","Welcome!"];
 let messagesLength = messages.length;
 let messageAudios = new Audio("sounds/messages.mp3");
 let imageArea = document.querySelector(".main-image img");
