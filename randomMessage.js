@@ -30,7 +30,7 @@ a= "end";
     hideTimer = setTimeout(()=>{
     messageBtn.style.display = "none";
     messageBtn.innerText = randomMessage;
-    },4000);
+    },2500);
 }
 })
 
