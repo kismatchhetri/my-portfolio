@@ -12,6 +12,7 @@ let playAudio = new Audio("sounds/aipodcast.mp3");
 let iconsSound = new Audio("sounds/pop.mp3");
 
 let mode = "light";
+let gaana;
 
 modeBtn.addEventListener("click" , ()=>{
     if(mode == "light"){
@@ -34,6 +35,7 @@ modeBtn.addEventListener("click" , ()=>{
         
     }
 })
+
 let audio = "play";
 let addo = true;
 play.addEventListener("click",()=>{
@@ -47,7 +49,6 @@ play.addEventListener("click",()=>{
     }else if(mode == "light"){
     playSpan.innerHTML ='<img src="images/icons/blackmic.gif" alt="" height="10px" width="10px">';
     }
-     console.log(addo);
     if(addo == true){
     timerID = setTimeout(()=>{
 
@@ -83,9 +84,11 @@ play.addEventListener("click",()=>{
         clearTimeout(timerID); 
         clearTimeout(timerID2); 
         addo =true;
+        gaana = "stopped"
     }
 
 })
+
 icons.forEach((val)=>{
     val.addEventListener("mouseover",()=>{
         iconsSound.play();
