@@ -1,6 +1,5 @@
 
 let messageBtn = document.querySelector(".random-message");
-console.log(messageBtn);
 
 let messages = ["Hey, You!","Take a Look","Namaste🙏🏼","Let's \n Connect","Welcome!"];
 let messagesLength = messages.length;

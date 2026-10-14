@@ -14,6 +14,7 @@ let iconsSound = new Audio("sounds/pop.mp3");
 let mode = "light";
 let gaana;
 
+function getMode(){
 modeBtn.addEventListener("click" , ()=>{
     if(mode == "light"){
         mode = "dark";
@@ -32,10 +33,12 @@ modeBtn.addEventListener("click" , ()=>{
         if(gaana == "playing"){
         playSpan.innerHTML ='<img src="images/icons/blackmic.gif" alt="" height="10px" width="10px">';
         }
-        
+
     }
 })
+}
 
+function getAudio(){
 let audio = "play";
 let addo = true;
 play.addEventListener("click",()=>{
@@ -84,14 +87,24 @@ play.addEventListener("click",()=>{
         clearTimeout(timerID); 
         clearTimeout(timerID2); 
         addo =true;
-        gaana = "stopped"
+        gaana = "stopped";
     }
 
 })
+}
 
+function getIconSound()
+{
 icons.forEach((val)=>{
     val.addEventListener("mouseover",()=>{
         iconsSound.play();
 
     })
 })
+}
+
+getMode();
+getAudio();
+getIconSound();
+
+
