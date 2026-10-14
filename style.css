@@ -51,6 +51,7 @@ h3 {
   font-size: 1.125rem;
   font-size: clamp(1.125rem, 1.1rem + 0.125vw, 1.25rem);
   font-weight: 600;
+  color: var(--h4-color)
 }
 h4 {
   font-weight: 400;
@@ -215,9 +216,9 @@ footer img {
   cursor: pointer;
 }
 .footer-skill:hover {
-  padding: 0px 0.6px;
+  padding: 0px 0.7px;
   transform: translateX(1.5px);
-  transition: 0.4s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .footer-skill img:hover {
   transform: scale(1.06);
@@ -287,7 +288,7 @@ footer img {
 }
 
 section {
-  margin-top: 140px;
+  margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr min(100% - 42px, 50rem) 1fr;
   grid-row-gap: 38px;
@@ -312,7 +313,7 @@ section {
 .section-projects {
   grid-column: 2/3;
   background-color: white;
-  border-radius: 0.8rem;
+  border-radius: 0.6rem;
 }
 .section-projects-text {
   padding: 20px 14px 2px 14px;
@@ -328,6 +329,7 @@ section {
 .section-button {
   grid-column: 2/3;
   margin-top: 10px;
+  margin-left: 20px;
 }
 .button-top{
   margin-bottom: 50px;
@@ -360,11 +362,53 @@ article {
   color: rgb(39, 39, 39);
   line-height: 1.5rem;
 }
+.article-links{
+  margin-top: 23px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+article i{
+  color: rgb(110, 110, 110);
+  font-size: 0.9rem;
+  margin-right: 2px;
+}
+article span{
+  color: rgb(110, 110, 110);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.article-mail{
+  border: none;
+  border-radius: 0.3rem;
+  padding: 8px 10px;
+  background-color: #3e3e3e;
+  color: rgb(229, 229, 229);
+  margin-top: 25px;
+  transition: 0.2s ease-in-out;
+
+}
+.article-mail:hover{
+    background-color: #2d2d2d;
+  color: rgb(229, 229, 229);
+
+}
+
+
+section{
+  display: none;
+}
+.article{
+  display: none;
+}
 
 /* 700px */
 @media (width >=44rem) {
   section {
     grid-template-columns: 1fr min(100% - 80px, 50rem) 1fr;
+    margin-top: 45px;
   }
   .section-main-text h2 {
     width: 80%;
@@ -375,10 +419,9 @@ article {
   .section-projects {
     grid-column: 2/3;
     background-color: white;
-    border-radius: 0.8rem;
   }
   .section-projects-text {
-    padding: 23px 30px 6px 30px;
+    padding: 25px 30px 6px 30px;
   }
 
   article {
