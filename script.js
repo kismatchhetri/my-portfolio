@@ -31,6 +31,7 @@ modeBtn.addEventListener("click" , ()=>{
         if(gaana == "playing"){
         playSpan.innerHTML ='<img src="images/icons/blackmic.gif" alt="" height="10px" width="10px">';
         }
+        
     }
 })
 let audio = "play";
