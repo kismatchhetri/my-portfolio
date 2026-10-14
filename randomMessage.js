@@ -7,12 +7,11 @@ let messagesLength = messages.length;
 let messageAudios = new Audio("sounds/messages.mp3");
 let imageArea = document.querySelector(".main-image img");
 
-
 let a= "start";
 let showTimer;
 let hideTimer;
 
-image.addEventListener("mouseover",()=>{
+imageArea.addEventListener("mouseover",()=>{
 let randomNumber = Math.floor(Math.random()*messagesLength); 
 let randomMessage = messages[randomNumber];
 messageAudios.play();
@@ -34,7 +33,7 @@ a= "end";
 }
 })
 
-image.addEventListener("mouseleave",()=>{
+imageArea.addEventListener("mouseleave",()=>{
     clearTimeout(showTimer);
     clearTimeout(hideTimer);
     messageBtn.style.display = "none";
